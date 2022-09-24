@@ -7,17 +7,19 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.12",
+    "autoprefixer": "^10",
+    "boxicons": "^2.1.4",
     "core-js": "^3.8.3",
+    "daisyui": "^2.31.0",
+    "postcss": "^8",
+    "tailwindcss": "^3",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "sass": "^1.32.7",
-    "sass-loader": "^12.0.0",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "vue-cli-plugin-tailwind": "~3.0.0"
   }
 }

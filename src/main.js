@@ -1,6 +1,9 @@
 import {createApp} from 'vue'
-import "@/assets/main.css"
 import App from './App.vue'
-import router from './router'
+import router from "@/router";
+import '@/assets/tailwind.css'
+import '@/assets/normalize.css'
 
-createApp(App).use(router).mount('#app')
+createApp(App)
+    .use(router)
+    .mount('#app')

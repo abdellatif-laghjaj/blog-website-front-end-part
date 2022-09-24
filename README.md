@@ -1,4 +1,4 @@
-# blog
+# vue3-tut
 
 ## Project setup
 ```
