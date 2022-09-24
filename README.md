@@ -1,4 +1,4 @@
-# vue3-tut
+# blog website "front end part"
 
 ## Project setup
 ```
