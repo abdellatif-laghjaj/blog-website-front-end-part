@@ -31,7 +31,7 @@
 
 <script>
 import 'boxicons'
-import NavBarLink from "@/components/Layouts/NavBarLink";
+import NavBarLink from "@/components/layouts/NavBarLink";
 
 export default {
   props: {},

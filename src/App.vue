@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import NavBar from "@/components/Layouts/NavBar";
+import NavBar from "@/components/layouts/NavBar";
 
 export default {
   name: 'App',
