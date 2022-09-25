@@ -1,13 +1,17 @@
 <template>
   <div>
-    <h1>Home page</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <Hero/>
   </div>
 </template>
 
 <script>
+import Hero from "@/views/Home/Hero";
+
 export default {
   name: 'Home',
+  components: {
+    Hero,
+  }
 };
 </script>
 
