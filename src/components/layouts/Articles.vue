@@ -12,10 +12,10 @@
 
     <!-- Show more -->
     <div class="flex justify-center mt-4">
-      <router-link to="/article">
-        <button class="btn gap-2">
-          Load more
-          <box-icon name='loader-circle' color="#fff"></box-icon>
+      <router-link to="/articles">
+        <button class="btn gap-2 flex items-center gap-2">
+          <span>View More</span>
+          <box-icon name='link-external' color="#fff"></box-icon>
         </button>
       </router-link>
     </div>
