@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="flex flex-col h-full ">
     <NavBar/>
-    <router-view/>
+    <div class="flex-1">
+      <router-view/>
+    </div>
     <Footer/>
   </div>
 </template>
