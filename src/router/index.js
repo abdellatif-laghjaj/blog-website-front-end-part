@@ -18,8 +18,13 @@ const routes = [
     },
     {
         path: '/articles',
-        name: 'Articles',
+        name: 'articles.index',
         component: () => import('@/views/Articles/index.vue')
+    },
+    {
+        path: '/articles/:slug',
+        name: 'articles.show',
+        component: () => import('@/views/Articles/show.vue')
     }
 ]
 
