@@ -1,15 +1,17 @@
 <template>
   <div class="card w-96 bg-base-100 shadow-xl mx-2">
-    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes"/></figure>
+    <figure>
+      <img src="/images/hero.jpg" class="article-img" alt="Shoes"/>
+    </figure>
     <div class="card-body">
-      <h2 class="card-title">
+      <h2 class="card-title text-2xl">
         Shoes!
-        <div class="badge badge-secondary">NEW</div>
       </h2>
+      <p class="opacity-80 italic mb-2">5 hours ago</p>
       <p>If a dog chews shoes whose shoes does he choose?</p>
       <div class="card-actions justify-end">
-        <div class="badge badge-outline">Fashion</div>
-        <div class="badge badge-outline">Products</div>
+        <div class="badge badge-secondary">Fashion</div>
+        <div class="badge badge-secondary">Products</div>
       </div>
     </div>
   </div>
@@ -25,7 +27,9 @@ export default {
 </script>
 
 <style scoped>
-.article-body {
-  max-width: 300px;
+.article-img{
+  width: 400px;
+  height: 225px;
+  object-fit: cover;
 }
 </style>
