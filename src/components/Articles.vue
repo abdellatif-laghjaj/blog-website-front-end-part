@@ -24,7 +24,7 @@
 
 <script>
 import 'boxicons'
-import Article from "@/components/layouts/Article";
+import Article from "@/components/Article";
 
 export default {
   components: {Article},

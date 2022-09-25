@@ -1,18 +1,5 @@
 <template>
-  <div class="relative z-0 h40 sm:h-64">
-    <img src="/images/about.jpg" alt="about image" class="h-full w-full object-cover">
-
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-primary opacity-50"></div>
-
-    <div class="absolute inset-0">
-      <div
-          class="container mx-auto px-4 sm:px-0 text-white text-3xl sm:text-4xl mt-[2rem] font-bold h-full w-full flex items-center justify-center gap-1">
-        <span>About</span>
-        <span class="text-primary">Us</span>
-      </div>
-    </div>
-  </div>
+  <InnerPageHero title="About" subtitle="Us" image-url="/images/about.jpg"/>
 
   <div class="container mx-auto py-8 px-4 sm:py-12 sm:px-8">
     <p class="text-justify">
@@ -50,8 +37,11 @@
 </template>
 
 <script>
+import InnerPageHero from "@/components/InnerPageHero";
+
 export default {
-  name: "index"
+  name: "index",
+  components: {InnerPageHero}
 }
 </script>
 

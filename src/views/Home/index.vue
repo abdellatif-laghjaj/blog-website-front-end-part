@@ -10,7 +10,7 @@
 
 <script>
 import Hero from "@/views/Home/Hero";
-import Articles from "@/components/layouts/Articles";
+import Articles from "@/components/Articles";
 
 export default {
   name: 'Home',
