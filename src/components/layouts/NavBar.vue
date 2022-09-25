@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-base-100 shadow-lg fixed z-50" id="navbar">
+  <div class="navbar bg-base-100 shadow-lg fixed z-50">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -8,6 +8,7 @@
           </svg>
         </label>
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <NavBarLink to="/" label="Home"/>
           <NavBarLink to="/articles" label="Articles"/>
           <NavBarLink to="/about" label="About"/>
           <NavBarLink to="/contact" label="Contact"/>
@@ -21,6 +22,7 @@
     </div>
     <div class="navbar-end hidden lg:flex">
       <ul class="menu menu-horizontal p-0">
+        <NavBarLink to="/" label="Home"/>
         <NavBarLink to="/articles" label="Articles"/>
         <NavBarLink to="/about" label="About"/>
         <NavBarLink to="/contact" label="Contact"/>

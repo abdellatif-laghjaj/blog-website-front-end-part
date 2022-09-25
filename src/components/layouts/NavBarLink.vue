@@ -1,5 +1,5 @@
 <template>
-  <li class="mx-1">
+  <li class="mx-1" id="navbar-link">
     <router-link :to="to">{{ label }}</router-link>
   </li>
 </template>

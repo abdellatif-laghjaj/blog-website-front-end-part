@@ -4,7 +4,7 @@
 
 @tailwind utilities;
 
-#navbar .router-link-active {
+#navbar-link .router-link-active {
     @apply bg-primary;
     @apply text-white;
 }
