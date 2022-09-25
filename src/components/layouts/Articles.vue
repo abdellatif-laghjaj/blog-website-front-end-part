@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Articles -->
-    <div class="m-4 lg:flex lg:flex-wrap justify-center gap-6">
+    <div class="flex justify-center flex-wrap gap-5 mx-auto">
       <Article/>
       <Article/>
       <Article/>
@@ -11,7 +11,7 @@
     </div>
 
     <!-- Show more -->
-    <div>
+    <div class="flex justify-center mt-4">
       <router-link to="/article">
         <button class="btn gap-2">
           Load more
