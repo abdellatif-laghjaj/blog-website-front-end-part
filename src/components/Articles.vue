@@ -11,7 +11,7 @@
     </div>
 
     <!-- Show more -->
-    <div class="flex justify-center mt-4">
+    <div class="flex justify-center mt-4" v-if="showViewMore">
       <router-link to="/articles">
         <button class="btn gap-2 flex items-center gap-2">
           <span>View More</span>
@@ -28,9 +28,13 @@ import Article from "@/components/Article";
 
 export default {
   components: {Article},
-  props: {},
+  props: {
+    showViewMore: {
+      type: Boolean,
+      default: true
+    }
+  },
   setup() {
-    return {}
   },
 }
 </script>
