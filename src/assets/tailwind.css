@@ -3,3 +3,8 @@
 @tailwind components;
 
 @tailwind utilities;
+
+#navbar .router-link-active {
+    @apply bg-primary;
+    @apply text-white;
+}

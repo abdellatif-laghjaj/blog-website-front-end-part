@@ -15,6 +15,11 @@ const routes = [
         path: '/contact',
         name: 'Contact',
         component: () => import('@/views/Contact/index.vue')
+    },
+    {
+        path: '/articles',
+        name: 'Articles',
+        component: () => import('@/views/Contact/index.vue')
     }
 ]
 
