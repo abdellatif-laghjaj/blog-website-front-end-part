@@ -2,12 +2,7 @@
   <div>
     <!-- Articles -->
     <div class="flex justify-center flex-wrap gap-5 mx-auto">
-      <Article/>
-      <Article/>
-      <Article/>
-      <Article/>
-      <Article/>
-      <Article/>
+      <Article v-for="article in articles" :key="article.id" :article="article"/>
     </div>
 
     <!-- Show more -->
@@ -32,7 +27,8 @@ export default {
     showViewMore: {
       type: Boolean,
       default: true
-    }
+    },
+    articles: Array,
   },
   setup() {
   },
