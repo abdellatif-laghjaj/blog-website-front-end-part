@@ -5,11 +5,13 @@
     <Articles :show-view-more="false" :articles="articles.data"/>
 
     <!-- Show more -->
-    <div class="flex justify-center mt-4">
-      <button class="btn gap-2 flex items-center gap-2">
+    <div class="flex justify-center mt-4" v-if="articles.links.next !== null">
+      <button class="btn gap-2 flex items-center gap-2" @click="showMoreArticles"
+              v-if="!loading">
         <span>Load More</span>
         <box-icon name='refresh' color="#fff"></box-icon>
       </button>
+      <button class="btn loading" v-else>loading</button>
     </div>
   </div>
 </template>
@@ -30,9 +32,18 @@ export default {
     // Fetch articles
     fetchArticles();
 
+    //show more articles
+    const showMoreArticles = () => {
+      fetchArticles({
+        showMore: true,
+        page: articles.value.meta.current_page + 1
+      });
+    }
+
     return {
       articles,
       loading,
+      showMoreArticles,
     }
   },
 }
