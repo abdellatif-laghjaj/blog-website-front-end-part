@@ -5,7 +5,7 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title text-2xl transition-colors duration-300 hover:text-primary">
-        <router-link to="/articles/article-slug">{{ article.title }}</router-link>
+        <router-link :to="`/articles/${article.slug}`">{{ article.title }}</router-link>
       </h2>
       <div class="text-gray-500 italic mb-2 flex items-center gap-1">
         <box-icon name='time-five' color="#6b7280" size="19px"></box-icon>

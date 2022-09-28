@@ -31,12 +31,12 @@ export function useArticle() {
     let articleDetailLoading = ref(false);
 
     function fetchArticleDetail(params) {
-        articleDetailLoading.value = false;
+        articleDetailLoading.value = true;
         api.get(`articles/${params.slug}`)
             .then(response => {
                 articleDetail.value = response.data.data;
             })
-            .finally(() => articleDetailLoading.value = true)
+            .finally(() => articleDetailLoading.value = false);
     }
 
     return {

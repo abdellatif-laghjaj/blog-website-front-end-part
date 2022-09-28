@@ -24,7 +24,8 @@ const routes = [
     {
         path: '/articles/:slug',
         name: 'articles.show',
-        component: () => import('@/views/Articles/show.vue')
+        component: () => import('@/views/Articles/show.vue'),
+        props: true
     }
 ]
 
