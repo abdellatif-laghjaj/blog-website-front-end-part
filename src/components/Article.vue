@@ -8,7 +8,12 @@
         <router-link :to="`/articles/${article.slug}`">{{ article.title }}</router-link>
       </h2>
       <div class="text-gray-500 italic mb-2 flex items-center gap-1">
-        <box-icon name='time-five' color="#6b7280" size="19px"></box-icon>
+        <div>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
         <div>{{ article.created_at_for_human }}</div>
       </div>
       <p>{{ article.small_description }}</p>
@@ -20,7 +25,6 @@
 </template>
 
 <script>
-import 'boxicons'
 import {ref} from "vue";
 
 export default {
