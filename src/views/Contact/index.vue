@@ -1,5 +1,5 @@
 <template>
-  <InnerPageHero title="Contact" subtitle="Us" image-url="/images/contact.jpg"/>
+  <InnerPageHero title="Contact Us" image-url="/images/contact.jpg"/>
 
   <div class="container mx-auto py-8 px-4 sm:py-12 sm:px-8">
     <div class="grid sm:grid-cols-3 sm:gap-4">

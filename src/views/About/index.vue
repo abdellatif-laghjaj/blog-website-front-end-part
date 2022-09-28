@@ -1,5 +1,5 @@
 <template>
-  <InnerPageHero title="About" subtitle="Us" image-url="/images/about.jpg"/>
+  <InnerPageHero title="About Us" image-url="/images/about.jpg"/>
 
   <div class="container mx-auto py-8 px-4 sm:py-12 sm:px-8">
     <p class="text-justify">

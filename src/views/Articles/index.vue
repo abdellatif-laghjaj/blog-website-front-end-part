@@ -1,5 +1,5 @@
 <template>
-  <InnerPageHero title="Our" subtitle="Articles" image-url="/images/articles.jpg"/>
+  <InnerPageHero title="Our Articles" image-url="/images/articles.jpg"/>
 
   <div class="mx-auto py-8 px-4 sm:py-12 sm:px-8">
     <Articles :show-view-more="false" :articles="articles.data"/>

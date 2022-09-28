@@ -1,7 +1,11 @@
 <template>
-  <InnerPageHero :title="article.title" subtitle="" :image-url="domain + article.image_url"/>
-
   <div class="container mx-auto py-8 px-4 sm:py-12 sm:px-8">
+    <!-- Title -->
+    <h1 class="text-2xl sm:text-4xl font-bold mb-4 mt-10 text-center">{{ article.title }}</h1>
+    <!-- Image -->
+    <div class="mb-4 article-detail-image">
+      <img :src="domain + article.image_url" alt="article image" class="w-full h-full object-cover">
+    </div>
     <!-- Category and date -->
     <div class="flex sm:items-center justify-between flex-col sm:flex-row">
       <div class="badge badge-primary flex items-center gap-1 py-3">
@@ -59,5 +63,8 @@ export default {
 </script>
 
 <style scoped>
-
+.article-detail-image {
+  width: 100%;
+  height: 400px;
+}
 </style>

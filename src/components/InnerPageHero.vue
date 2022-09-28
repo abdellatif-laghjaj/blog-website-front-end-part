@@ -9,7 +9,6 @@
       <div
           class="container mx-auto px-4 sm:px-0 text-white text-3xl sm:text-4xl mt-[2rem] font-bold h-full w-full flex items-center justify-center gap-1">
         <span>{{ title }}</span>
-        <span class="text-primary">{{ subtitle }}</span>
       </div>
     </div>
   </div>
@@ -23,10 +22,6 @@ export default {
       type: String,
       required: true
     },
-    subtitle: {
-      type: String,
-      required: true
-    },
     imageUrl: {
       type: String,
       required: true
@@ -36,7 +31,6 @@ export default {
   setup(props) {
     return {
       title: props.title,
-      subtitle: props.subtitle,
       imageUrl: props.imageUrl
     }
   }
