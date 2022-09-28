@@ -1,7 +1,7 @@
 <template xmlns="http://www.w3.org/1999/html">
   <div class="card w-96 bg-base-100 shadow-xl mx-2">
     <figure>
-      <img :src="article.image_url" class="article-img" :alt="article.title">
+      <img :src="domain + article.image_url" class="article-img" :alt="article.title">
     </figure>
     <div class="card-body">
       <h2 class="card-title text-2xl transition-colors duration-300 hover:text-primary">
@@ -21,13 +21,17 @@
 
 <script>
 import 'boxicons'
+import {ref} from "vue";
 
 export default {
   props: {
     article: Object,
   },
   setup() {
-    return {}
+    const domain = ref('http://localhost');
+    return {
+      domain
+    }
   },
 }
 </script>
