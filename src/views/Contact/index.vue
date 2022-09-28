@@ -18,33 +18,33 @@
       </div>
 
       <!-- Contact Form -->
-      <form class="card flex-shrink-0 w-full shadow-2xl bg-base-100" @submit.prevent="sendFeedback">
+      <form class="card flex-shrink-0 w-full shadow-2xl bg-base-100" @submit.prevent="sendFeedback" method="POST">
         <div class="card-body w-full">
           <h2 class="text-center font-bold text-2xl mb-2">Contact <span class="text-primary">Form</span></h2>
           <div class="form-control">
             <input type="text" placeholder="Full name" class="input input-bordered" name="name" v-model="form.name"
-                   required>
+            >
             <span class="text-error text-sm py-3">{{ getError('name') }}</span>
           </div>
           <div class="form-control">
             <input type="text" placeholder="Message subject" class="input input-bordered" name="subject"
                    v-model="form.subject"
-                   required>
+            >
             <span class="text-error text-sm py-3">{{ getError('subject') }}</span>
           </div>
           <div class="form-control">
             <input type="email" placeholder="Email" class="input input-bordered" name="email" v-model="form.email"
-                   required>
+            >
             <span class="text-error text-sm py-3">{{ getError('email') }}</span>
           </div>
           <div class="form-control">
             <input type="tel" placeholder="Phone number" class="input input-bordered" name="phone" v-model="form.phone"
-                   required>
+            >
             <span class="text-error text-sm py-3">{{ getError('phone') }}</span>
           </div>
           <div class="form-control">
             <textarea class="textarea textarea-bordered" placeholder="Type your message here..." name="message"
-                      v-model="form.message" required></textarea>
+                      v-model="form.message"></textarea>
             <span class="text-error text-sm py-3">{{ getError('message') }}</span>
           </div>
 

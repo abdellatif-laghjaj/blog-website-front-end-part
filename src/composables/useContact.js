@@ -1,5 +1,5 @@
 import {ref} from "vue";
-import api from "../apis/api";
+import api from "@/apis/api";
 
 export function useContact() {
     let form = ref({
@@ -22,7 +22,7 @@ export function useContact() {
                 form.value = {};
             })
             .catch(err => {
-                if (err.response.status === 422) {
+                if (err.response.status !== 200) {
                     errors.value = err.response.data.errors;
                 }
             })
