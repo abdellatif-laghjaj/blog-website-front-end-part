@@ -3,8 +3,17 @@
     <!-- Title -->
     <h1 class="text-2xl sm:text-4xl font-bold mb-4 mt-10 text-center">{{ article.title }}</h1>
     <!-- Image -->
-    <div class="mb-4 article-detail-image w-full sm:h-[400px]">
-      <img :src="domain + article.image_url" alt="article image" class="w-full sm:h-full h-1/2 object-cover">
+    <div class="mb-4 article-detail-image flex items-center w-full sm:h-[400px]">
+      <img :src="domain + article.image_url" alt="article image" class="w-full sm:h-full h-1/2 object-cover"
+           v-if="article.image_url">
+      <div v-else class="mx-auto">
+        <lottie-player src="/images/loading.json"
+                       background="transparent"
+                       speed="1"
+                       style="width: 200px; height: 200px;"
+                       loop autoplay>
+        </lottie-player>
+      </div>
     </div>
     <!-- Category and date -->
     <div class="flex sm:items-center justify-between flex-col sm:flex-row">
@@ -37,7 +46,7 @@
 <script>
 import InnerPageHero from "@/components/InnerPageHero";
 import {useArticle} from "@/composables/useArticle";
-import 'boxicons'
+import '@lottiefiles/lottie-player';
 import {ref} from "vue";
 
 export default {
